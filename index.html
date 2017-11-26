@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.flex-container {
+display: -webkit-flex;
+display: flex;
+-webkit-flex-flow: row wrap;
+flex-flow: row wrap;
+text-align: center;
+}
+.flex-container > * {
+padding: 5px;
+-webkit-flex: 1 100%;
+flex: 1 100%;
+}
+.article {
+text-align: left;
+height: calc(100vh - 277px);
+background: lightgrey;
+border-radius: 5px;
+margin:3px;
+}
+header {background: dimgrey;color:white;}
+h1{font-size: 40px;font-family: "DejaVu Sans Mono";}
+footer {background: #aaa;color:white;}
+@media all and (min-width: 768px) {
+.article {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}
+footer {-webkit-order:3;order:3;}
+}
+#openContent + #myContent {display:none;}
+#openContent:checked + #myContent {display:block;}
+label{
+background-color: tan;
+color: white;
+padding: 7px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+}
+label:hover, label:active {
+background-color: sandybrown;
+}
+article{
+word-break: break-all;
+white-space:pre-line;
+}
+</style>
+</head>
+<body>
+
+<div class="flex-container">
+<header>
+<h1><code>Tech News</code></h1>
+</header>
+
+<article class="article" style="overflow:auto;"><h2>Daily Updates</h2><h5>Updates that are relevant in the short term, but not the long term. Mainly limited to software vulnerabilities that need to be patched and data breach notifications.</h5>
+<b>11-23-2017</b><p>
+"Imgur, one of the world's most visited websites, has confirmed a hack dating back to 2014.
+The company told ZDNet that hackers stole 1.7 million email addresses and passwords, scrambled with the SHA-256 algorithm, which has been passed over in recent years in favor of stronger password scramblers.
+Imgur said the breach didn't include personal information because the site has "never asked" for real names, addresses, or phone numbers.
+The stolen accounts represent a fraction of Imgur's 150 million monthly users."
+<a href="http://www.zdnet.com/article/imgur-reveals-hackers-stole-login-data/" target="_blank">http://www.zdnet.com/article/imgur-reveals-hackers-stole-login-data/</a>
+</p><b>11-23-2017</b><p>
+"Acer, Dell, Fujitsu, HP, Lenovo, Panasonic Impacted by Intel ME Security Bugs" No patches, yet, but hopefully soon:tm:0
+<a href="https://www.bleepingcomputer.com/news/hardware/acer-dell-fujitsu-hp-lenovo-panasonic-impacted-by-intel-me-security-bugs/" target="_blank">https://www.bleepingcomputer.com/news/hardware/acer-dell-fujitsu-hp-lenovo-panasonic-impacted-by-intel-me-security-bugs/</a>
+</p><b>11-22-2017</b><p>
+"Apple's Latest MacOS Security Update Contained Fix for Plug-n-Hack USB Attack" <a href="https://www.bleepingcomputer.com/news/apple/apples-latest-macos-security-update-contained-fix-for-plug-n-hack-usb-attack/" target="_blank">https://www.bleepingcomputer.com/news/apple/apples-latest-macos-security-update-contained-fix-for-plug-n-hack-usb-attack/</a>
+"HP said it would release firmware patches later this week for several security bugs reported to the company by various cyber-security experts." <a href="https://www.bleepingcomputer.com/news/security/hp-to-release-patch-this-week-for-printer-security-bugs/" target="_blank">https://www.bleepingcomputer.com/news/security/hp-to-release-patch-this-week-for-printer-security-bugs/</a>
+"Hacker Breaches Sacramento Public Transportation System, Asks for 1 BTC Ransom" <a href="https://www.bleepingcomputer.com/news/security/hacker-breaches-sacramento-public-transportation-system-asks-for-1-btc-ransom/" target="_blank">https://www.bleepingcomputer.com/news/security/hacker-breaches-sacramento-public-transportation-system-asks-for-1-btc-ransom/</a>
+</p><b>11-21-2017</b><p>
+"In a public statement, Uber has announced that it sustained a massive data breach in 2016: 57 million customers and drivers names, e-mail addresses, and phone numbers were compromised." <a href="https://arstechnica.com/tech-policy/2017/11/report-uber-paid-hackers-100000-to-keep-2016-data-breach-quiet/" target="_blank">https://arstechnica.com/tech-policy/2017/11/report-uber-paid-hackers-100000-to-keep-2016-data-breach-quiet/</a>
+"The company allegedly paid its hackers a $100,000 ransom to delete the data and not publicize the breach to media or regulators." <a href="https://www.theverge.com/2017/11/21/16687796/uber-cyberattack-data-breach-exposed-users-57-million" target="_blank">https://www.theverge.com/2017/11/21/16687796/uber-cyberattack-data-breach-exposed-users-57-million</a>
+"TP-Link's European sites are falling behind when it comes to providing firmware updates, said Daniel Aleksandersen, a Norwegian technology expert, on Monday. The expert found this the hard way when he bought a TP-Link network repeater last month and tried to download the latest firmware version off TP-Link's Norwegian website, only to find out it was lagging two firmware versions behind the firmware versions available through the TP-Link Denmark and Sweden portals." <a href="https://www.bleepingcomputer.com/news/security/tp-link-offers-outdated-or-no-firmware-at-all-on-30-percent-of-its-european-sites/" target="_blank">https://www.bleepingcomputer.com/news/security/tp-link-offers-outdated-or-no-firmware-at-all-on-30-percent-of-its-european-sites/</a>
+"Intel published a security advisory last night detailing eight vulnerabilities that impact core CPU technologies such as the Intel Management Engine (ME), Intel Server Platform Services (SPS), and Intel Trusted Execution Engine (TXE).The vulnerabilities are severe enough to allow attackers to install rootkits on vulnerable PCs, retrieve data processed inside CPUs, and cause PC crashes - which should be the least of someone's worries."
+<a href="https://www.bleepingcomputer.com/news/security/intel-fixes-critical-bugs-in-management-engine-its-secret-cpu-on-chip/" target="_blank">https://www.bleepingcomputer.com/news/security/intel-fixes-critical-bugs-in-management-engine-its-secret-cpu-on-chip/</a>
+<a href="http://www.datacenterknowledge.com/security/usb-exploit-affects-nine-years-intel-processors" target="_blank">http://www.datacenterknowledge.com/security/usb-exploit-affects-nine-years-intel-processors</a>
+<a href="https://arstechnica.com/information-technology/2017/11/intel-warns-of-widespread-vulnerability-in-pc-server-device-firmware/" target="_blank">https://arstechnica.com/information-technology/2017/11/intel-warns-of-widespread-vulnerability-in-pc-server-device-firmware/</a>
+<a href="http://www.tomshardware.com/news/intel-me-security-vulnerabilities-patches,35971.html" target="_blank">http://www.tomshardware.com/news/intel-me-security-vulnerabilities-patches,35971.html</a>
+And the FCC released its plan to disasemble net neutrality.
+In summary, it will:
+End Title II protections and erase the three Net Neutrality rules passed at the FCC in 2015 and upheld in court last year.
+Legalize internet blocking and discrimination by Comcast, AT&T and Verizon, no questions asked.
+Permit throttling back the speeds of different kinds of websites and apps.
+Encourage paid prioritization - sticking most sites and apps in the slow lane and reserving the fast lane for the few wealthy companies that can afford special treatment.
+Links (with more analysis to come):
+<a href="https://www.reuters.com/article/us-usa-internet-exclusive/fcc-chief-plans-to-ditch-u-s-net-neutrality-rules-idUSKBN1DL21A" target="_blank">https://www.reuters.com/article/us-usa-internet-exclusive/fcc-chief-plans-to-ditch-u-s-net-neutrality-rules-idUSKBN1DL21A</a>
+<a href="https://arstechnica.com/tech-policy/2017/11/rip-net-neutrality-fcc-chair-releases-plan-to-deregulate-isps/" target="_blank">https://arstechnica.com/tech-policy/2017/11/rip-net-neutrality-fcc-chair-releases-plan-to-deregulate-isps/</a>
+<a href="http://www.tomshardware.com/news/fcc-dismantling-net-neutrality-rules,35976.html" target="_blank">http://www.tomshardware.com/news/fcc-dismantling-net-neutrality-rules,35976.html</a>
+<a href="https://arstechnica.com/tech-policy/2017/11/fcc-will-also-order-states-to-scrap-plans-for-their-own-net-neutrality-laws/" target="_blank">https://arstechnica.com/tech-policy/2017/11/fcc-will-also-order-states-to-scrap-plans-for-their-own-net-neutrality-laws/</a>
+<a href="https://www.theverge.com/2017/11/21/16680290/fcc-end-net-neutrality-vote-announced" target="_blank">https://www.theverge.com/2017/11/21/16680290/fcc-end-net-neutrality-vote-announced</a>
+<a href="https://www.theverge.com/2017/11/21/16686486/fcc-broadcast-ownership-cap-proposal-sinclair" target="_blank">https://www.theverge.com/2017/11/21/16686486/fcc-broadcast-ownership-cap-proposal-sinclair</a>
+<a href="https://www.theverge.com/2017/11/21/16686644/eric-schneiderman-fcc-net-neutrality-spam-investigation-evidence" target="_blank">https://www.theverge.com/2017/11/21/16686644/eric-schneiderman-fcc-net-neutrality-spam-investigation-evidence</a>
+<a href="https://www.bleepingcomputer.com/news/security/broadband-providers-win-big-with-the-proposed-repeal-of-net-neutrality/" target="_blank">https://www.bleepingcomputer.com/news/security/broadband-providers-win-big-with-the-proposed-repeal-of-net-neutrality/</a>
+</p><b>11-22-2017</b><p>
+"If you, a friend or loved one lost money in a scam involving Western Union, some or all of those funds may be recoverable thanks to a more than half-billion dollar program set up by the U.S. Federal Trade Commission." <a href="https://krebsonsecurity.com/2017/11/fund-targets-victims-scammed-via-western-union/" target="_blank">https://krebsonsecurity.com/2017/11/fund-targets-victims-scammed-via-western-union/</a>
+
+</p>
+</article>
+<article class="article" style="overflow:auto;"><h2>Weekly Updates</h2><h5>Updates that are relevant in the long term. This includes overall trends, major technology shifts, and impactful policy and regulations.</h5><label for="openContent">This week's links (unsorted):</label><input type="checkbox" id="openContent" style="display:none;"/>
+<div id="myContent"> <!--https://www.textfixer.com/html/convert-url-to-html-link.php-->
+<a href="https://www.bleepingcomputer.com/news/technology/popular-websites-are-recording-your-every-move/" target="_blank">https://www.bleepingcomputer.com/news/technology/popular-websites-are-recording-your-every-move/</a>
+<a href="https://www.theverge.com/2017/11/21/16684818/google-location-tracking-cell-tower-data-android-os-firebase-privacy" target="_blank">https://www.theverge.com/2017/11/21/16684818/google-location-tracking-cell-tower-data-android-os-firebase-privacy</a>
+<a href="https://www.reuters.com/article/us-usa-internet-exclusive/fcc-chief-plans-to-ditch-u-s-net-neutrality-rules-idUSKBN1DL21A" target="_blank">https://www.reuters.com/article/us-usa-internet-exclusive/fcc-chief-plans-to-ditch-u-s-net-neutrality-rules-idUSKBN1DL21A</a>
+<a href="https://arstechnica.com/tech-policy/2017/11/rip-net-neutrality-fcc-chair-releases-plan-to-deregulate-isps/" target="_blank">https://arstechnica.com/tech-policy/2017/11/rip-net-neutrality-fcc-chair-releases-plan-to-deregulate-isps/</a>
+<a href="http://www.tomshardware.com/news/fcc-dismantling-net-neutrality-rules,35976.html" target="_blank">http://www.tomshardware.com/news/fcc-dismantling-net-neutrality-rules,35976.html</a>
+<a href="https://arstechnica.com/tech-policy/2017/11/fcc-will-also-order-states-to-scrap-plans-for-their-own-net-neutrality-laws/" target="_blank">https://arstechnica.com/tech-policy/2017/11/fcc-will-also-order-states-to-scrap-plans-for-their-own-net-neutrality-laws/</a>
+<a href="https://www.theverge.com/2017/11/21/16680290/fcc-end-net-neutrality-vote-announced" target="_blank">https://www.theverge.com/2017/11/21/16680290/fcc-end-net-neutrality-vote-announced</a>
+<a href="https://www.theverge.com/2017/11/21/16686486/fcc-broadcast-ownership-cap-proposal-sinclair" target="_blank">https://www.theverge.com/2017/11/21/16686486/fcc-broadcast-ownership-cap-proposal-sinclair</a>
+<a href="https://www.theverge.com/2017/11/21/16686644/eric-schneiderman-fcc-net-neutrality-spam-investigation-evidence" target="_blank">https://www.theverge.com/2017/11/21/16686644/eric-schneiderman-fcc-net-neutrality-spam-investigation-evidence</a>
+<a href="https://www.bleepingcomputer.com/news/security/broadband-providers-win-big-with-the-proposed-repeal-of-net-neutrality/" target="_blank">https://www.bleepingcomputer.com/news/security/broadband-providers-win-big-with-the-proposed-repeal-of-net-neutrality/</a>
+<a href="http://www.tomshardware.com/news/intel-me-security-vulnerabilities-patches,35971.html" target="_blank">http://www.tomshardware.com/news/intel-me-security-vulnerabilities-patches,35971.html</a>
+<a href="https://arstechnica.com/information-technology/2017/11/intel-warns-of-widespread-vulnerability-in-pc-server-device-firmware/" target="_blank">https://arstechnica.com/information-technology/2017/11/intel-warns-of-widespread-vulnerability-in-pc-server-device-firmware/</a>
+<a href="https://www.bleepingcomputer.com/news/security/intel-fixes-critical-bugs-in-management-engine-its-secret-cpu-on-chip/" target="_blank">https://www.bleepingcomputer.com/news/security/intel-fixes-critical-bugs-in-management-engine-its-secret-cpu-on-chip/</a>
+<a href="https://www.youtube.com/watch?v=csK3KspB-6A&list=WL&index=20" target="_blank">https://www.youtube.com/watch?v=csK3KspB-6A&list=WL&index=20</a>
+<a href="http://www.tomshardware.com/news/fcc-proposal-end-net-neutrality,35983.html" target="_blank">http://www.tomshardware.com/news/fcc-proposal-end-net-neutrality,35983.html</a>
+<a href="http://www.tomshardware.com/news/fcc-dismantling-net-neutrality-rules,35976.html" target="_blank">http://www.tomshardware.com/news/fcc-dismantling-net-neutrality-rules,35976.html</a>
+<a href="https://arstechnica.com/tech-policy/2017/11/why-the-fcc-ignored-public-opinion-in-its-push-to-kill-net-neutrality/" target="_blank">https://arstechnica.com/tech-policy/2017/11/why-the-fcc-ignored-public-opinion-in-its-push-to-kill-net-neutrality/</a>
+<a href="https://arstechnica.com/tech-policy/2017/11/net-neutrality-supporters-plan-nationwide-protests-on-december-7/" target="_blank">https://arstechnica.com/tech-policy/2017/11/net-neutrality-supporters-plan-nationwide-protests-on-december-7/</a>
+<a href="https://arstechnica.com/tech-policy/2017/11/fcc-stonewalled-investigation-of-net-neutrality-comment-fraud-ny-ag-says/" target="_blank">https://arstechnica.com/tech-policy/2017/11/fcc-stonewalled-investigation-of-net-neutrality-comment-fraud-ny-ag-says/</a>
+<a href="https://www.theverge.com/2017/11/22/16690870/fcc-repeal-net-neutrality-proposal-released" target="_blank">https://www.theverge.com/2017/11/22/16690870/fcc-repeal-net-neutrality-proposal-released</a>
+<a href="https://www.theverge.com/2017/11/22/16691506/portugal-meo-internet-packages-net-neutrality-ajit-pai-plan" target="_blank">https://www.theverge.com/2017/11/22/16691506/portugal-meo-internet-packages-net-neutrality-ajit-pai-plan</a>
+<a href="https://www.theverge.com/2017/11/22/16691794/net-neutrality-fcc-ajit-pai-comcast-block-bittorrent" target="_blank">https://www.theverge.com/2017/11/22/16691794/net-neutrality-fcc-ajit-pai-comcast-block-bittorrent</a>
+<a href="https://www.theverge.com/2017/11/22/16691324/verizon-store-net-neutrality-protests" target="_blank">https://www.theverge.com/2017/11/22/16691324/verizon-store-net-neutrality-protests</a>
+<a href="https://www.theverge.com/2017/11/22/16689838/fcc-net-neutrality-comments-were-largely-ignored" target="_blank">https://www.theverge.com/2017/11/22/16689838/fcc-net-neutrality-comments-were-largely-ignored</a>
+<a href="https://www.theverge.com/2017/11/22/16691344/fcc-preempt-block-state-local-net-neutrality-laws" target="_blank">https://www.theverge.com/2017/11/22/16691344/fcc-preempt-block-state-local-net-neutrality-laws</a>
+<a href="http://www.tomshardware.com/news/fcc-proposal-end-net-neutrality,35983.html" target="_blank">http://www.tomshardware.com/news/fcc-proposal-end-net-neutrality,35983.html</a>
+<a href="https://www.theverge.com/2017/11/23/16693840/net-neutrality-us-fcc-global-effect" target="_blank">https://www.theverge.com/2017/11/23/16693840/net-neutrality-us-fcc-global-effect</a>
+<a href="https://www.theverge.com/2017/11/23/16694128/net-neutrality-protests-fcc-ajit-pai-internet" target="_blank">https://www.theverge.com/2017/11/23/16694128/net-neutrality-protests-fcc-ajit-pai-internet</a>
+<a href="https://arstechnica.com/tech-policy/2017/11/uber-hit-with-2-lawsuits-over-gigantic-2016-data-breach/" target="_blank">https://arstechnica.com/tech-policy/2017/11/uber-hit-with-2-lawsuits-over-gigantic-2016-data-breach/</a>
+<a href="https://arstechnica.com/tech-policy/2017/11/judge-dismisses-lawsuits-filed-back-in-2013-over-nsa-bulk-surveillance/" target="_blank">https://arstechnica.com/tech-policy/2017/11/judge-dismisses-lawsuits-filed-back-in-2013-over-nsa-bulk-surveillance/</a>
+<a href="https://www.bleepingcomputer.com/news/hardware/acer-dell-fujitsu-hp-lenovo-panasonic-impacted-by-intel-me-security-bugs/" target="_blank">https://www.bleepingcomputer.com/news/hardware/acer-dell-fujitsu-hp-lenovo-panasonic-impacted-by-intel-me-security-bugs/</a>
+<a href="https://krebsonsecurity.com/2017/11/namedobssnfafsa-data-gold-mine/" target="_blank">https://krebsonsecurity.com/2017/11/namedobssnfafsa-data-gold-mine/</a>
+<a href="https://arstechnica.com/tech-policy/2017/11/att-and-comcast-win-lawsuit-they-filed-to-stall-google-fiber-in-nashville/" target="_blank">https://arstechnica.com/tech-policy/2017/11/att-and-comcast-win-lawsuit-they-filed-to-stall-google-fiber-in-nashville/</a>
+<a href="https://arstechnica.com/tech-policy/2017/11/as-doj-calls-for-responsible-encryption-expert-asks-responsible-to-whom/" target="_blank">https://arstechnica.com/tech-policy/2017/11/as-doj-calls-for-responsible-encryption-expert-asks-responsible-to-whom/</a>
+<a href="https://arstechnica.com/tech-policy/2017/11/how-four-microsoft-engineers-proved-copy-protection-would-fail/" target="_blank">https://arstechnica.com/tech-policy/2017/11/how-four-microsoft-engineers-proved-copy-protection-would-fail/</a>
+<a href="https://www.bleepingcomputer.com/news/security/mystery-surrounds-recent-cryptocurrency-wallet-hack/" target="_blank">https://www.bleepingcomputer.com/news/security/mystery-surrounds-recent-cryptocurrency-wallet-hack/</a>
+<a href="https://9to5mac.com/2017/11/19/unlock-texas-shooter-iphone-se/" target="_blank">https://9to5mac.com/2017/11/19/unlock-texas-shooter-iphone-se/</a>
+<a href="https://www.bloomberg.com/news/articles/2017-11-21/uber-concealed-cyberattack-that-exposed-57-million-people-s-data" target="_blank">https://www.bloomberg.com/news/articles/2017-11-21/uber-concealed-cyberattack-that-exposed-57-million-people-s-data</a>
+<a href="https://www.uber.com/newsroom/2016-data-incident/" target="_blank">https://www.uber.com/newsroom/2016-data-incident/</a>
+<a href="https://arstechnica.com/tech-policy/2017/11/extreme-digital-vetting-of-visitors-to-the-us-moves-forward-under-a-new-name/" target="_blank">https://arstechnica.com/tech-policy/2017/11/extreme-digital-vetting-of-visitors-to-the-us-moves-forward-under-a-new-name/</a>
+</div>
+<b>11-11-2017</b><p>
+"It's time to stop trusting Google search already"
+"
+Last weekend, in the hours after a deadly Texas church shooting, Google search promoted false reports about the suspect, suggesting that he was a radical communist affiliated with the antifa movement. The claims popped up in Google's "Popular on Twitter" module, which made them prominently visible - although not the top results - in a search for the alleged killer's name. Of course, the was just the latest instance of a long-standing problem: it was the latest of multiple similar missteps. As usual, Google promised to improve its search results, while the offending tweets disappeared. But telling Google to retrain its algorithms, as appropriate as that demand is, doesn't solve the bigger issue: the search engine's monopoly on truth.
+"
+<a href="https://www.theverge.com/2017/11/10/16633574/stop-trusting-google-search-texas-shooting-twitter-misinformation" target="_blank">https://www.theverge.com/2017/11/10/16633574/stop-trusting-google-search-texas-shooting-twitter-misinformation</a>
+I think that the important part is to remember that Google is not the source of news, it is a search engine. It returns things similar to what you search. The legitmacy of those sources is up to the user to determine.
+<hr>
+The real lesson of that self-driving shuttle's first-day accident
+The shuttle wasn't at fault, but it might have been able to avert the accident.
+...
+Wednesday was supposed to be the triumphant launch of a free, driverless shuttle in downtown Las Vegas. ... Instead, within hours, the project was greeted with the worst possible headline: "Self-driving shuttle bus in crash on first day."
+The headline, and lots of others like it, were technically accurate but a little misleading. Officials say the other vehicle-a semi truck that bumped into the shuttle while backing up-was at fault. And it was such a low-speed collision that no one was injured. The accident "merely dented the plastic panels on the front of the shuttle," according to Jeff Zurschmeide of Digital Trends.
+...
+On the other side, the shuttle did exactly what it was programmed to do, and that's a critical point. The self-driving program didn't account for the vehicle in front unexpectedly backing up. We had about 20 feet of empty street behind us (I looked) and most human drivers would have thrown the car into reverse and used some of that space to get away from the truck. Or at least leaned on the horn and made our presence harder to miss. The shuttle didn't have those responses in its program.
+...
+Either way, a clear lesson here is that self-driving vehicles need to be able to do more than just avoid causing accidents. They also need to be programmed to take the kind of common-sense steps human drivers would take to prevent accidents even when they're technically the fault of another driver.
+"
+While definitely not ready for mainstream adoption, as proven by this accident, self driving cars are a major innovation that has the potential to save lives. So I hope that this doesnt slow its adoption once the technology becomes ready to replace human drivers.
+<a href="https://arstechnica.com/cars/2017/11/the-real-lesson-of-that-self-driving-shuttles-first-day-accident/" target="_blank">https://arstechnica.com/cars/2017/11/the-real-lesson-of-that-self-driving-shuttles-first-day-accident/</a>
+<hr>
+Testimony and Statement for the Record of Bruce Schneier
+Fellow and Lecturer, Belfer Center for Science and International Affairs, Harvard Kennedy School Fellow, Berkman Center for Internet and Society at Harvard Law School
+Hearing on "Securing Consumers' Credit Data in the Age of Digital Commerce"
+...
+I have eleven main points:
+1. The Equifax breach was a serious security breach that puts millions of Americans at risk.
+2. Equifax was solely at fault.
+3. There are thousands of data brokers with similarly intimate information, similarly at risk.
+4. These data brokers deliberately hide their actions, and make it difficult for consumers to learn about or control their data.
+5. The existing regulatory structure is inadequate.
+6. The market cannot fix this because we are not the customers of data brokers.
+7. We need effective regulation of data brokers.
+8. Resist complaints from the industry that this is "too hard."
+9. This has foreign trade implications.
+10. This has national security implications.
+11. We need to do something about it.
+"
+Full testimony:
+<a href="https://www.schneier.com/blog/archives/2017/11/me_on_the_equif.html" target="_blank">https://www.schneier.com/blog/archives/2017/11/me_on_the_equif.html</a>
+<hr>
+"Simple Banking Security Tip: Verbal Passwords" <a href="https://krebsonsecurity.com/2017/11/simple-banking-security-tip-verbal-passwords/" target="_blank">https://krebsonsecurity.com/2017/11/simple-banking-security-tip-verbal-passwords/</a>
+<hr>
+A team of academics and private industry experts, led by DHS officials, remotely hacked a Boeing 757 airplane parked at an airport in Atlantic City, New Jersey.
+The hack took place in September 2016 and was part of a controlled experiment. DHS owned the plane the hack was attempted on, and pilots had no knowledge that the research team was trying to break into the plane.
+The DHS-led team said they didn't have physical access to interact with any system on the plane and all was done remotely via "radio frequency communications." The team needed only two days to come up with the hack and execute it.
+"
+We definitely need to consider the security implications of our infrastructure and transportation being so heavily connected. Hopefully the manufacturers will build products more securely before anyone gets hurt.
+<a href="https://www.bleepingcomputer.com/news/security/dhs-team-hacks-a-boeing-757/" target="_blank">https://www.bleepingcomputer.com/news/security/dhs-team-hacks-a-boeing-757/</a>
+<hr>
+The final results from DEFCON hackers were published in a report this fall from Verified Voting. That report, co-authored by many, including DEFCON founder Jeff Moss, was damning:
+"The results were sobering. By the end of the conference, every piece of equipment in the Voting Village was effectively breached in some manner. Participants with little prior knowledge and only limited tools and resources were quite capable of undermining the confidentiality, integrity, and availability of these systems...The DEFCON Voting Village showed that technical minds with little or no previous knowledge about voting machines, without even being provided proper documentation or tools, can still learn how to hack the machines within tens of minutes or a few hours."
+<a href="https://arstechnica.com/information-technology/2017/11/hacking-the-vote-threats-keep-changing-but-election-it-sadly-stays-the-same/" target="_blank">https://arstechnica.com/information-technology/2017/11/hacking-the-vote-threats-keep-changing-but-election-it-sadly-stays-the-same/</a>
+<hr>
+Sen. Al Franken (D-Minn.) wants the US to impose net neutrality rules on Google, Facebook, Amazon, Twitter, and other Web companies.
+Net neutrality rules today apply only to Internet service providers, such as cable companies and mobile carriers. ISPs are not allowed to block, throttle, or demand payments to prioritize delivery of lawful Internet traffic. The rules are meant to give all websites-both the established players and startups-a fair shot at reaching Internet users.
+But Franken argues that similar non-discrimination rules should apply to the most dominant websites.
+"As tech giants become a new kind of Internet gatekeeper, I believe the same basic principles of net neutrality should apply here: no one company should have the power to pick and choose which content reaches consumers and which doesn't," Franken wrote yesterday in an op-ed for The Guardian. "Facebook, Google, and Amazon-like ISPs-should be 'neutral' in their treatment of the flow of lawful information and commerce on their platforms."
+"
+<a href="https://arstechnica.com/tech-policy/2017/11/al-franken-wants-net-neutrality-rules-for-google-facebook-and-amazon/" target="_blank">https://arstechnica.com/tech-policy/2017/11/al-franken-wants-net-neutrality-rules-for-google-facebook-and-amazon/</a>
+Im not sure how I feel about this. For ISPs its rather simple: I pay you for a, say for instance, 25 mbps connection to the internet. When I request information, I expect that the ISP will deliver it to me unaltered and at the speed I paid for, not at a slower speed, not with additional ads, and not blocked altogether. Both that statement and the implementation are straightforward.
+How exactly net neutrality applies to google and facebook is unclear. What content should they be neutral with? How exactly should that be implemented? The article goes on to say that those details have not yet been thought about and that additional hearings will happen, so I will be following this closely.
+<hr>
+WikiLeaks published the first-ever batch of source code for CIA cyber-weapons. The source code released today is for a toolkit named Hive, a so-called implant framework, a system that allows CIA operatives to control the malware it deploys on infected computers.
+From March to August this year, WikiLeaks has released only documentation for supposed CIA cyber-weapons the organization claims were stolen from the CIA by hackers and insiders, and then handed over to its employees.
+Those releases were part of a series of leaks WikiLeaks called Vault 7. Now, WikiLeaks says Hive is just the first of a long string of similar releases, a series WikiLeaks calls Vault 8, which will consist of source code for tools previously released in the Vault 7 series.
+"
+The existance of the code is not anything Id me concerned about. Its basically a RAT (remote access tool), many of which are commercially available for helping people with technical problems by doing it for them remotely (I believe teamviewer is one of the comerical products). But I am looking forward to the exploits, and getting patches for them.
+<a href="https://www.bleepingcomputer.com/news/government/wikileaks-releases-source-code-of-cia-cyber-weapon/" target="_blank">https://www.bleepingcomputer.com/news/government/wikileaks-releases-source-code-of-cia-cyber-weapon/</a>
+<hr>
+DOJ: Strong encryption that we don't have access to is "unreasonable"
+...
+Poison the well
+The DOJ's position runs counter to the consensus of information security experts, who say that it is impossible to build the strongest encryption system possible that would also allow the government access under certain conditions.
+"Of course, criminals and terrorists have used, are using, and will use encryption to hide their planning from the authorities, just as they will use many aspects of society's capabilities and infrastructure: cars, restaurants, telecommunications," Bruce Schneier, a well-known cryptographer, wrote last year.
+"In general, we recognize that such things can be used by both honest and dishonest people. Society thrives nonetheless because the honest so outnumber the dishonest. Compare this with the tactic of secretly poisoning all the food at a restaurant. Yes, we might get lucky and poison a terrorist before he strikes, but we'll harm all the innocent customers in the process. Weakening encryption for everyone is harmful in exactly the same way."
+Rosenstein closed his interview by noting that he understands re-engineering encryption to accommodate government may make it weaker.
+"And I think that's a legitimate issue that we can debate-how much risk are we willing to take in return for the reward?" he said.
+"My point is simply that I think somebody needs to consider what's on the other side of the balance. There is a cost to having impregnable security, and we've talked about some of the aspects of that. The cost is that criminals are going to be able to get away with stuff, and that's going to prevent us in law enforcement from holding them accountable."
+"
+<a href="https://arstechnica.com/tech-policy/2017/11/doj-strong-encryption-that-we-dont-have-access-to-is-unreasonable/" target="_blank">https://arstechnica.com/tech-policy/2017/11/doj-strong-encryption-that-we-dont-have-access-to-is-unreasonable/</a>
+Thing is, encryption is not a dimmer switch. "You cannot create encryption that only angels can open and demons cannot. Anyone who says otherwise is either misinformed, or less of an angel than they appear."
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/VPBH1eW28mo?rel=0" frameborder="0" allowfullscreen></iframe>
+I understand that criminals will use encryption, but weakening encryption would cause much more harm than good.
+<hr>
+</p>
+</article>
+
+<footer>How to contact me securely:<br/>connor.bray.ricks@gmail.com<br/>GPG Fingerprint (key in pgp.mit.edu): 7C8A 15DB 8510 8FA0 E8B68297 FAC5 8BDE 5DE5 F984<br/>Wire: @delta_duhr <br/>Signal: (720) 635-6109</footer>
+</div>
+
+</body>
+</html>
