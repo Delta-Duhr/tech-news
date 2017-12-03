@@ -34,7 +34,7 @@ footer {-webkit-order:3;order:3;}
 }
 #openContent + #myContent {display:none;}
 #openContent:checked + #myContent {display:block;}
-label{
+article label{
 background-color: tan;
 color: white;
 padding: 7px;
@@ -44,7 +44,9 @@ display: inline-block;
 }
 #openContent2 + #myContent2 {display:none;}
 #openContent2:checked + #myContent2 {display:block;}
-label{
+#openContent3 + #myContent3 {display:none;}
+#openContent3:checked + #myContent3 {display:block;}
+article label{
 background-color: tan;
 color: white;
 padding: 7px;
@@ -52,7 +54,7 @@ text-align: center;
 text-decoration: none;
 display: inline-block;
 }
-label:hover, label:active {background-color: sandybrown;}
+article label:hover, article label:active {background-color: sandybrown;}
 article{white-space:pre-line;}
 </style>
 </head>
@@ -339,9 +341,8 @@ I understand that criminals will use encryption, but weakening encryption would 
 </p>
 </article>
 
-<footer>How to contact me securely:<br/>connor.bray.ricks@gmail.com | Wire: @delta_duhr | Signal: (720) 635-6109<br/>GPG Fingerprint (key in pgp.mit.edu): 7C8A 15DB 8510 8FA0 E8B6  8297 FAC5 8BDE 5DE5 F984
-<img style="visibility:hidden;" src='https://www.counter12.com/img-68Z66Ay18Wc6Aabx-50.gif' border='0' alt='estatisticas gratis'>
-</footer>
+<footer><label for="openContent3">How to contact me securely:<br/>connor.bray.ricks@gmail.com | Wire: @delta_duhr | Signal: (720) 635-6109<br/>GPG Fingerprint (key in pgp.mit.edu): 7C8A 15DB 8510 8FA0 E8B6  8297 FAC5 8BDE 5DE5 F984</label><input type="checkbox" id="openContent3" style="display:none;"/>
+<div id="myContent3"><img src='https://www.counter12.com/img-68Z66Ay18Wc6Aabx-50.gif' border='0'></div></footer>
 </div>
 </body>
 </html>
