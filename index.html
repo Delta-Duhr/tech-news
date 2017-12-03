@@ -54,6 +54,12 @@ display: inline-block;
 }
 label:hover, label:active {background-color: sandybrown;}
 article{white-space:pre-line;}
+.border iframe {
+    border: none;
+    margin: 0;
+    padding: 0;
+    display:inline; /* Add this */
+}
 </style>
 </head>
 <body>
@@ -64,64 +70,49 @@ article{white-space:pre-line;}
 </header>
 
 <article class="article" style="overflow:auto;"><h2>Daily Updates</h2><h5>Updates that are relevant in the short term, but not the long term. Mainly limited to software vulnerabilities that need to be patched and data breach notifications.</h5><label for="openContent2">The last few day's links (when I dont have time to get to them at the moment)(unsorted):</label><input type="checkbox" id="openContent2" style="display:none;"/>
-<div id="myContent2">
-<a href="https://www.qubes-os.org/news/2017/11/28/qsb-36/" target="_blank">https://www.qubes-os.org/news/2017/11/28/qsb-36/</a>
-<a href="http://time.com/5033521/fcc-ajit-pai-net-neutrality-repeal/" target="_blank">http://time.com/5033521/fcc-ajit-pai-net-neutrality-repeal/</a>
-<a href="https://arstechnica.com/tech-policy/2017/11/fcc-will-also-order-states-to-scrap-plans-for-their-own-net-neutrality-laws/" target="_blank">https://arstechnica.com/tech-policy/2017/11/fcc-will-also-order-states-to-scrap-plans-for-their-own-net-neutrality-laws/</a>
-<a href="http://www.zdnet.com/article/intel-weve-found-severe-bugs-in-secretive-management-engine-affecting-millions/" target="_blank">http://www.zdnet.com/article/intel-weve-found-severe-bugs-in-secretive-management-engine-affecting-millions/</a>
-<a href="https://www.cnbc.com/2017/11/21/jpmorgan-reportedly-getting-into-bitcoin-futures-trading.html" target="_blank">https://www.cnbc.com/2017/11/21/jpmorgan-reportedly-getting-into-bitcoin-futures-trading.html</a>
-<a href="https://arstechnica.com/tech-policy/2017/11/att-and-comcast-win-lawsuit-they-filed-to-stall-google-fiber-in-nashville/" target="_blank">https://arstechnica.com/tech-policy/2017/11/att-and-comcast-win-lawsuit-they-filed-to-stall-google-fiber-in-nashville/</a>
-<a href="https://www.theverge.com/2017/11/22/16691794/net-neutrality-fcc-ajit-pai-comcast-block-bittorrent" target="_blank">https://www.theverge.com/2017/11/22/16691794/net-neutrality-fcc-ajit-pai-comcast-block-bittorrent</a>
-<a href="http://www.bbc.com/news/technology-42079941" target="_blank">http://www.bbc.com/news/technology-42079941</a>
-<a href="https://www.bloomberg.com/news/articles/2017-11-21/uber-concealed-cyberattack-that-exposed-57-million-people-s-data" target="_blank">https://www.bloomberg.com/news/articles/2017-11-21/uber-concealed-cyberattack-that-exposed-57-million-people-s-data</a>
-<a href="https://www.wsj.com/articles/ubers-hack-disclosure-raises-questions-about-timing-1511462671" target="_blank">https://www.wsj.com/articles/ubers-hack-disclosure-raises-questions-about-timing-1511462671</a>
-<a href="https://www.theguardian.com/technology/2017/nov/24/data-breach-hits-department-of-social-services-credit-card-system" target="_blank">https://www.theguardian.com/technology/2017/nov/24/data-breach-hits-department-of-social-services-credit-card-system</a>
-<a href="https://qz.com/1131515/google-collects-android-users-locations-even-when-location-services-are-disabled/" target="_blank">https://qz.com/1131515/google-collects-android-users-locations-even-when-location-services-are-disabled/</a>
-<a href="https://motherboard.vice.com/en_us/article/59yexk/princeton-study-session-replay-scripts-tracking-you" target="_blank">https://motherboard.vice.com/en_us/article/59yexk/princeton-study-session-replay-scripts-tracking-you</a>
-<a href="https://theintercept.com/2017/11/24/staggering-variety-of-clandestine-trackers-found-in-popular-android-apps/" target="_blank">https://theintercept.com/2017/11/24/staggering-variety-of-clandestine-trackers-found-in-popular-android-apps/</a>
-<a href="https://torrentfreak.com/google-wipes-786-pirate-sites-from-search-results-171121/" target="_blank">https://torrentfreak.com/google-wipes-786-pirate-sites-from-search-results-171121/</a>
-<a href="https://siliconangle.com/blog/2017/11/21/russian-minister-says-country-will-never-legalize-bitcoin/" target="_blank">https://siliconangle.com/blog/2017/11/21/russian-minister-says-country-will-never-legalize-bitcoin/</a>
-<a href="https://motherboard.vice.com/en_us/article/j5j34x/ethereum-startup-confido-vanished-after-people-invested-374k-ico" target="_blank">https://motherboard.vice.com/en_us/article/j5j34x/ethereum-startup-confido-vanished-after-people-invested-374k-ico</a>
-<a href="https://arstechnica.com/tech-policy/2017/11/fcc-will-also-order-states-to-scrap-plans-for-their-own-net-neutrality-laws/" target="_blank">https://arstechnica.com/tech-policy/2017/11/fcc-will-also-order-states-to-scrap-plans-for-their-own-net-neutrality-laws/</a>
-<a href="https://arstechnica.com/tech-policy/2017/11/att-and-comcast-win-lawsuit-they-filed-to-stall-google-fiber-in-nashville/" target="_blank">https://arstechnica.com/tech-policy/2017/11/att-and-comcast-win-lawsuit-they-filed-to-stall-google-fiber-in-nashville/</a>
-<a href="https://www.theverge.com/2017/11/22/16691794/net-neutrality-fcc-ajit-pai-comcast-block-bittorrent" target="_blank">https://www.theverge.com/2017/11/22/16691794/net-neutrality-fcc-ajit-pai-comcast-block-bittorrent</a>
-<a href="https://thenextweb.com/twitter/2017/11/29/fcc-chairman-derides-twitter-bias-avoiding-net-neutrality-issue/" target="_blank">https://thenextweb.com/twitter/2017/11/29/fcc-chairman-derides-twitter-bias-avoiding-net-neutrality-issue/</a>
-<a href="https://www.cnet.com/news/why-india-doesnt-want-free-basics/" target="_blank">https://www.cnet.com/news/why-india-doesnt-want-free-basics/</a>
-<a href="https://www.battleforthenet.com/" target="_blank">https://www.battleforthenet.com/</a>
-<a href="https://petitions.whitehouse.gov/petition/do-not-repeal-net-neutrality" target="_blank">https://petitions.whitehouse.gov/petition/do-not-repeal-net-neutrality</a>
-<a href="http://fortune.com/2017/11/25/lost-bitcoins/" target="_blank">http://fortune.com/2017/11/25/lost-bitcoins/</a>
-<a href="http://fortune.com/2017/11/27/bitcoin-michael-novogratz-40000/" target="_blank">http://fortune.com/2017/11/27/bitcoin-michael-novogratz-40000/</a>
-<a href="http://www.tomshardware.com/news/psa-remember-update-intel-management-engine,36002.html" target="_blank">http://www.tomshardware.com/news/psa-remember-update-intel-management-engine,36002.html</a>
-<a href="https://krebsonsecurity.com/2017/11/macos-high-sierra-users-change-root-password-now/" target="_blank">https://krebsonsecurity.com/2017/11/macos-high-sierra-users-change-root-password-now/</a>
-<a href="https://www.schneier.com/blog/archives/2017/11/man-in-the-midd_8.html" target="_blank">https://www.schneier.com/blog/archives/2017/11/man-in-the-midd_8.html</a>
-<a href="https://arstechnica.com/tech-policy/2017/11/how-bitcoins-became-worth-10000/" target="_blank">https://arstechnica.com/tech-policy/2017/11/how-bitcoins-became-worth-10000/</a>
-<a href="https://arstechnica.com/tech-policy/2017/11/canadian-man-pleads-guilty-admits-role-in-massive-2014-yahoo-hack/" target="_blank">https://arstechnica.com/tech-policy/2017/11/canadian-man-pleads-guilty-admits-role-in-massive-2014-yahoo-hack/</a>
-<a href="https://arstechnica.com/tech-policy/2017/11/ajit-pai-blames-cher-and-hulk-actor-for-ginning-up-net-neutrality-support/" target="_blank">https://arstechnica.com/tech-policy/2017/11/ajit-pai-blames-cher-and-hulk-actor-for-ginning-up-net-neutrality-support/</a>
-<a href="https://arstechnica.com/information-technology/2017/11/macos-bug-lets-you-log-in-as-admin-with-no-password-required/" target="_blank">https://arstechnica.com/information-technology/2017/11/macos-bug-lets-you-log-in-as-admin-with-no-password-required/</a>
-<a href="https://arstechnica.com/tech-policy/2017/11/comcast-throttling-bittorrent-was-no-big-deal-fcc-says/" target="_blank">https://arstechnica.com/tech-policy/2017/11/comcast-throttling-bittorrent-was-no-big-deal-fcc-says/</a>
-<a href="https://arstechnica.com/tech-policy/2017/11/supreme-court-seems-reluctant-to-blow-up-a-key-weapon-against-patent-trolls/" target="_blank">https://arstechnica.com/tech-policy/2017/11/supreme-court-seems-reluctant-to-blow-up-a-key-weapon-against-patent-trolls/</a>
-<a href="https://arstechnica.com/information-technology/2017/11/army-red-disk-intel-sharing-system-left-exposed-in-open-aws-data-store/" target="_blank">https://arstechnica.com/information-technology/2017/11/army-red-disk-intel-sharing-system-left-exposed-in-open-aws-data-store/</a>
-<a href="https://arstechnica.com/tech-policy/2017/11/in-data-breach-lawsuit-chicago-slams-uber-for-trusting-word-of-criminals/" target="_blank">https://arstechnica.com/tech-policy/2017/11/in-data-breach-lawsuit-chicago-slams-uber-for-trusting-word-of-criminals/</a>
-<a href="http://www.zdnet.com/article/cia-to-continue-cloud-push-in-the-name-of-national-security/" target="_blank">http://www.zdnet.com/article/cia-to-continue-cloud-push-in-the-name-of-national-security/</a>
-<a href="http://www.zdnet.com/article/ragtime-program-appear-in-nsa-leaked-files/" target="_blank">http://www.zdnet.com/article/ragtime-program-appear-in-nsa-leaked-files/</a>
-<a href="http://www.zdnet.com/article/stupid-stupid-macos-security-flaw/" target="_blank">http://www.zdnet.com/article/stupid-stupid-macos-security-flaw/</a>
-<a href="http://www.zdnet.com/article/google-urges-fair-and-responsible-ai-development/" target="_blank">http://www.zdnet.com/article/google-urges-fair-and-responsible-ai-development/</a>
-<a href="http://www.zdnet.com/article/nsa-leak-inscom-exposes-red-disk-intelligence-system/" target="_blank">http://www.zdnet.com/article/nsa-leak-inscom-exposes-red-disk-intelligence-system/</a>
-<a href="http://www.zdnet.com/article/google-torches-this-nasty-tizi-android-spyware-it-found-on-play-store/" target="_blank">http://www.zdnet.com/article/google-torches-this-nasty-tizi-android-spyware-it-found-on-play-store/</a>
-<a href="http://www.zdnet.com/article/hackers-are-exploiting-microsoft-word-vulnerability-to-take-control-of-pcs/" target="_blank">http://www.zdnet.com/article/hackers-are-exploiting-microsoft-word-vulnerability-to-take-control-of-pcs/</a>
-<a href="http://www.zdnet.com/article/internet-censorship-its-on-the-rise-and-silicon-valley-is-helping-it-happen/" target="_blank">http://www.zdnet.com/article/internet-censorship-its-on-the-rise-and-silicon-valley-is-helping-it-happen/</a>
-<a href="http://www.zdnet.com/article/ombudsman-finds-australian-federal-police-unaware-of-journalist-metadata-requirements/" target="_blank">http://www.zdnet.com/article/ombudsman-finds-australian-federal-police-unaware-of-journalist-metadata-requirements/</a>
-<a href="https://www.theverge.com/2017/11/28/16711782/apple-macos-high-sierra-critical-password-security-flaw" target="_blank">https://www.theverge.com/2017/11/28/16711782/apple-macos-high-sierra-critical-password-security-flaw</a>
-<a href="https://www.theverge.com/2017/11/28/16710862/uber-waymo-ric-jacobs-letter-evidence-alsup" target="_blank">https://www.theverge.com/2017/11/28/16710862/uber-waymo-ric-jacobs-letter-evidence-alsup</a>
-<a href="https://www.theverge.com/2017/11/28/16710450/fcc-net-neutrality-fact-sheet-is-total-nonsense" target="_blank">https://www.theverge.com/2017/11/28/16710450/fcc-net-neutrality-fact-sheet-is-total-nonsense</a>
-<a href="https://www.recode.net/2017/11/28/16711256/fcc-ajit-pai-net-neutrality-cher-twitter" target="_blank">https://www.recode.net/2017/11/28/16711256/fcc-ajit-pai-net-neutrality-cher-twitter</a>
-<a href="https://www.bleepingcomputer.com/news/apple/macos-bug-lets-you-create-a-root-account-by-repeatedly-pressing-a-button/" target="_blank">https://www.bleepingcomputer.com/news/apple/macos-bug-lets-you-create-a-root-account-by-repeatedly-pressing-a-button/</a>
-<a href="https://www.bleepingcomputer.com/news/security/psa-bitcoin-gold-btg-official-windows-wallet-app-might-have-been-compromised/" target="_blank">https://www.bleepingcomputer.com/news/security/psa-bitcoin-gold-btg-official-windows-wallet-app-might-have-been-compromised/</a>
-<a href="https://www.bleepingcomputer.com/news/security/top-secret-us-army-and-nsa-files-left-exposed-online-on-amazon-s3-server/" target="_blank">https://www.bleepingcomputer.com/news/security/top-secret-us-army-and-nsa-files-left-exposed-online-on-amazon-s3-server/</a>
-<a href="https://www.bleepingcomputer.com/news/security/researchers-identify-44-trackers-in-more-than-300-android-apps/" target="_blank">https://www.bleepingcomputer.com/news/security/researchers-identify-44-trackers-in-more-than-300-android-apps/</a>
-<a href="https://www.bleepingcomputer.com/news/security/google-discovers-new-tizi-android-spyware/" target="_blank">https://www.bleepingcomputer.com/news/security/google-discovers-new-tizi-android-spyware/</a>
+<div id="myContent2"> <!--https://www.textfixer.com/html/convert-url-to-html-link.php-->
+None currently.
 </div>
-<b>11-27-2017</b><p>
+<p>In summary, just update all the things (unless the thing is a BLU phone, the latest update bricks them...).
+Also, sorry for the hiatus, I had a really bad week with homework. Should be better this week.</p>
+<b>12-03-2017</b><p>
+"Android Cryptocurrency Wallet Apps Are a Security Disaster Waiting to Happen. Over 90% of all scanned apps were vulnerable" <a href="https://www.bleepingcomputer.com/news/security/android-cryptocurrency-wallet-apps-are-a-security-disaster-waiting-to-happen/" target="_blank">https://www.bleepingcomputer.com/news/security/android-cryptocurrency-wallet-apps-are-a-security-disaster-waiting-to-happen/</a>
+"Staggering Variety of Clandestine Trackers Found in Popular Android Apps" <a href="https://theintercept.com/2017/11/24/staggering-variety-of-clandestine-trackers-found-in-popular-android-apps/" target="_blank">https://theintercept.com/2017/11/24/staggering-variety-of-clandestine-trackers-found-in-popular-android-apps/</a>
+"An implosion of the midrange Android smartphone company BLU is occurring before our eyes. BLU released a software update this week for its BLU Life One X2 smartphone. That software encrypted said phones and locked out their users, rendering devices useless. That wouldn’t be the worst situation in the world of software flubs, but days without comment might well be. " <a href="https://www.slashgear.com/blu-bricks-phones-ignores-complaints-update-30510258/" target="_blank">https://www.slashgear.com/blu-bricks-phones-ignores-complaints-update-30510258/</a>
+"QSB #36: Xen hypervisor issue in populate-on-demand code (XSA-247)" <a href="https://www.qubes-os.org/news/2017/11/28/qsb-36/" target="_blank">https://www.qubes-os.org/news/2017/11/28/qsb-36/</a>
+"A security researcher has identified thousands of Serial-to-Ethernet devices connected online that leak Telnet passwords that could be used to attack the equipment that is placed behind them." <a href="https://www.bleepingcomputer.com/news/security/thousands-of-serial-to-ethernet-devices-leak-telnet-passwords/" target="_blank">https://www.bleepingcomputer.com/news/security/thousands-of-serial-to-ethernet-devices-leak-telnet-passwords/</a>
+"PSA: Bitcoin Gold (BTG) Official Windows Wallet App Might Have Been Compromised" <a href="https://www.bleepingcomputer.com/news/security/psa-bitcoin-gold-btg-official-windows-wallet-app-might-have-been-compromised/" target="_blank">https://www.bleepingcomputer.com/news/security/psa-bitcoin-gold-btg-official-windows-wallet-app-might-have-been-compromised/</a>
+"Users lost over $655,000 worth of Verge cryptocurrency this week, but nobody knows who to blame in an incident involving the maintainers of the CoinPouch wallet app and the Verge cryptocurrency." <a href="https://www.bleepingcomputer.com/news/security/mystery-surrounds-recent-cryptocurrency-wallet-hack/" target="_blank">https://www.bleepingcomputer.com/news/security/mystery-surrounds-recent-cryptocurrency-wallet-hack/</a>
+Uber data breach in 2016: "Our outside forensics experts have not seen any indication that trip location history, credit card numbers, bank account numbers, Social Security numbers or dates of birth were downloaded. The names and driver’s license numbers of around 600,000 drivers in the United States. Some personal information of 57 million Uber users around the world, including the drivers described above. This information included names, email addresses and mobile phone numbers." <a href="https://www.uber.com/newsroom/2016-data-incident/" target="_blank">https://www.uber.com/newsroom/2016-data-incident/</a>
+"Uber hit with 2 lawsuits over gigantic 2016 data breach. “Uber knew or should have known its security systems were inadequate.”" <a href="https://arstechnica.com/tech-policy/2017/11/uber-hit-with-2-lawsuits-over-gigantic-2016-data-breach/" target="_blank">https://arstechnica.com/tech-policy/2017/11/uber-hit-with-2-lawsuits-over-gigantic-2016-data-breach/</a>
+"Shipping firm warns that hackers may leak confidential information. Global shipbroker says it fell victim to a 'cybersecurity incident' and is contacting those who might have had their information stolen by attackers." <a href="http://www.zdnet.com/article/shipping-firm-warns-that-hackers-may-leak-confidential-information/" target="_blank">http://www.zdnet.com/article/shipping-firm-warns-that-hackers-may-leak-confidential-information/</a>
+"Hackers are exploiting Microsoft Word vulnerability to take control of PCs" <a href="http://www.zdnet.com/article/hackers-are-exploiting-microsoft-word-vulnerability-to-take-control-of-pcs/" target="_blank">http://www.zdnet.com/article/hackers-are-exploiting-microsoft-word-vulnerability-to-take-control-of-pcs/</a>
+"iOS 11.2 is out for iPhone, iPad, and iPod touch. A lot of bug fixes and tweaks, and a few new features." <a href="http://www.zdnet.com/article/ios-11-2-is-out-for-iphone-ipad-and-ipod-touch/" target="_blank">http://www.zdnet.com/article/ios-11-2-is-out-for-iphone-ipad-and-ipod-touch/</a>
+"Major Apple security flaw grants admin access on macOS High Sierra without password. The critical vulnerability was publicly disclosed on Twitter" <a href="https://www.theverge.com/2017/11/28/16711782/apple-macos-high-sierra-critical-password-security-flaw" target="_blank">https://www.theverge.com/2017/11/28/16711782/apple-macos-high-sierra-critical-password-security-flaw</a>
+"New security update fixes macOS root bug. Security Update 2017-001 fixes the "logic error" that led to the vulnerability." <a href="https://arstechnica.com/gadgets/2017/11/new-security-update-fixes-macos-root-bug/" target="_blank">https://arstechnica.com/gadgets/2017/11/new-security-update-fixes-macos-root-bug/</a>
+"Intel published a security advisory last night detailing eight vulnerabilities that impact core CPU technologies such as the Intel Management Engine (ME), Intel Server Platform Services (SPS), and Intel Trusted Execution Engine (TXE).
+The vulnerabilities are severe enough to allow attackers to install rootkits on vulnerable PCs, retrieve data processed inside CPUs, and cause PC crashes —which should be the least of someone's worries.
+One of the affected products is the Intel Management Engine, a technology that is often described as a secret CPU inside the main Intel CPU. The ME component runs independently from the user's main OS, with separate processes, threads, memory manager, hardware bus driver, file system, and many other components. An attacker that exploits a flaw and gains control over the Intel ME has untethered control over the entire computer."
+<b>Sidenote here: This is why secret operating systems running without the consumer's knowledge or ability to disable them is a bad thing.</b>
+"
+According to Intel, the following Intel ME, SPS, and TXE firmware versions are affected:
+ME firmware versions 11.0/11.5/11.6/11.7/11.10/11.20
+SPS Firmware version 4.0
+TXE version 3.0
+According to Intel, the following products incorporate vulnerable firmware versions:
+6th, 7th & 8th Generation Intel® Core™ Processor Family
+Intel® Xeon® Processor E3-1200 v5 & v6 Product Family
+Intel® Xeon® Processor Scalable Family
+Intel® Xeon® Processor W Family
+Intel® Atom® C3000 Processor Family
+Apollo Lake Intel® Atom Processor E3900 series
+Apollo Lake Intel® Pentium™
+Celeron™ N and J series Processors
+"
+<a href="https://www.bleepingcomputer.com/news/security/intel-fixes-critical-bugs-in-management-engine-its-secret-cpu-on-chip/" target="_blank">https://www.bleepingcomputer.com/news/security/intel-fixes-critical-bugs-in-management-engine-its-secret-cpu-on-chip/</a>
+"Over 900 of PC and laptop models affected" <a href="https://www.bleepingcomputer.com/news/hardware/acer-dell-fujitsu-hp-lenovo-panasonic-impacted-by-intel-me-security-bugs/" target="_blank">https://www.bleepingcomputer.com/news/hardware/acer-dell-fujitsu-hp-lenovo-panasonic-impacted-by-intel-me-security-bugs/</a>
+The new firmware for my laptop will land tomorrow, and I plan to update then.
+</p><b>11-27-2017</b><p>
 "Federal student aid site offers one-stop shopping for ID thieves. If you have someone’s name, birthdate, and SSN, FAFSA site will give up sensitive data."
 <a href="https://arstechnica.com/information-technology/2017/11/federal-student-aid-site-offers-one-stop-shopping-for-id-thieves/" target="_blank">https://arstechnica.com/information-technology/2017/11/federal-student-aid-site-offers-one-stop-shopping-for-id-thieves/</a>
 "A critical remote code execution flaw affects over half of the Internet's email servers, and there's no fix for it available, just yet.
@@ -181,71 +172,90 @@ Links (with more analysis to come):
 </article>
 <article class="article" style="overflow:auto;"><h2>Weekly Updates</h2><h5>Updates that are relevant in the long term. This includes overall trends, major technology shifts, and impactful policy and regulations.</h5><label for="openContent">This week's links (unsorted):</label><input type="checkbox" id="openContent" style="display:none;"/>
 <div id="myContent"> <!--https://www.textfixer.com/html/convert-url-to-html-link.php-->
-<a href="https://www.bleepingcomputer.com/news/technology/popular-websites-are-recording-your-every-move/" target="_blank">https://www.bleepingcomputer.com/news/technology/popular-websites-are-recording-your-every-move/</a>
-<a href="https://www.theverge.com/2017/11/21/16684818/google-location-tracking-cell-tower-data-android-os-firebase-privacy" target="_blank">https://www.theverge.com/2017/11/21/16684818/google-location-tracking-cell-tower-data-android-os-firebase-privacy</a>
-<a href="https://www.reuters.com/article/us-usa-internet-exclusive/fcc-chief-plans-to-ditch-u-s-net-neutrality-rules-idUSKBN1DL21A" target="_blank">https://www.reuters.com/article/us-usa-internet-exclusive/fcc-chief-plans-to-ditch-u-s-net-neutrality-rules-idUSKBN1DL21A</a>
-<a href="https://arstechnica.com/tech-policy/2017/11/rip-net-neutrality-fcc-chair-releases-plan-to-deregulate-isps/" target="_blank">https://arstechnica.com/tech-policy/2017/11/rip-net-neutrality-fcc-chair-releases-plan-to-deregulate-isps/</a>
-<a href="http://www.tomshardware.com/news/fcc-dismantling-net-neutrality-rules,35976.html" target="_blank">http://www.tomshardware.com/news/fcc-dismantling-net-neutrality-rules,35976.html</a>
-<a href="https://arstechnica.com/tech-policy/2017/11/fcc-will-also-order-states-to-scrap-plans-for-their-own-net-neutrality-laws/" target="_blank">https://arstechnica.com/tech-policy/2017/11/fcc-will-also-order-states-to-scrap-plans-for-their-own-net-neutrality-laws/</a>
-<a href="https://www.theverge.com/2017/11/21/16680290/fcc-end-net-neutrality-vote-announced" target="_blank">https://www.theverge.com/2017/11/21/16680290/fcc-end-net-neutrality-vote-announced</a>
-<a href="https://www.theverge.com/2017/11/21/16686486/fcc-broadcast-ownership-cap-proposal-sinclair" target="_blank">https://www.theverge.com/2017/11/21/16686486/fcc-broadcast-ownership-cap-proposal-sinclair</a>
+<a href="https://www.theverge.com/2017/11/30/16719824/ajit-pai-net-neutrality-death-threat" target="_blank">https://www.theverge.com/2017/11/30/16719824/ajit-pai-net-neutrality-death-threat</a>
+<a href="https://www.theverge.com/2017/11/29/16715998/fcc-fake-net-neutrality-comment-eric-schneiderman-new-york-report-form" target="_blank">https://www.theverge.com/2017/11/29/16715998/fcc-fake-net-neutrality-comment-eric-schneiderman-new-york-report-form</a>
+<a href="https://www.theverge.com/2017/11/28/16710450/fcc-net-neutrality-fact-sheet-is-total-nonsense" target="_blank">https://www.theverge.com/2017/11/28/16710450/fcc-net-neutrality-fact-sheet-is-total-nonsense</a>
+<a href="https://www.theverge.com/2017/11/27/16705170/net-neutrality-cyber-monday-fcc-letter" target="_blank">https://www.theverge.com/2017/11/27/16705170/net-neutrality-cyber-monday-fcc-letter</a>
+<a href="https://www.theverge.com/2017/11/23/16694128/net-neutrality-protests-fcc-ajit-pai-internet" target="_blank">https://www.theverge.com/2017/11/23/16694128/net-neutrality-protests-fcc-ajit-pai-internet</a>
+<a href="https://www.theverge.com/2017/11/23/16693840/net-neutrality-us-fcc-global-effect" target="_blank">https://www.theverge.com/2017/11/23/16693840/net-neutrality-us-fcc-global-effect</a>
+<a href="https://www.theverge.com/2017/11/22/16691794/net-neutrality-fcc-ajit-pai-comcast-block-bittorrent" target="_blank">https://www.theverge.com/2017/11/22/16691794/net-neutrality-fcc-ajit-pai-comcast-block-bittorrent</a>
+<a href="https://www.theverge.com/2017/11/22/16691506/portugal-meo-internet-packages-net-neutrality-ajit-pai-plan" target="_blank">https://www.theverge.com/2017/11/22/16691506/portugal-meo-internet-packages-net-neutrality-ajit-pai-plan</a>
+<a href="https://www.theverge.com/2017/11/22/16691344/fcc-preempt-block-state-local-net-neutrality-laws" target="_blank">https://www.theverge.com/2017/11/22/16691344/fcc-preempt-block-state-local-net-neutrality-laws</a>
+<a href="https://www.theverge.com/2017/11/22/16691324/verizon-store-net-neutrality-protests" target="_blank">https://www.theverge.com/2017/11/22/16691324/verizon-store-net-neutrality-protests</a>
+<a href="https://www.theverge.com/2017/11/22/16690870/fcc-repeal-net-neutrality-proposal-released" target="_blank">https://www.theverge.com/2017/11/22/16690870/fcc-repeal-net-neutrality-proposal-released</a>
+<a href="https://www.theverge.com/2017/11/22/16689838/fcc-net-neutrality-comments-were-largely-ignored" target="_blank">https://www.theverge.com/2017/11/22/16689838/fcc-net-neutrality-comments-were-largely-ignored</a>
 <a href="https://www.theverge.com/2017/11/21/16686644/eric-schneiderman-fcc-net-neutrality-spam-investigation-evidence" target="_blank">https://www.theverge.com/2017/11/21/16686644/eric-schneiderman-fcc-net-neutrality-spam-investigation-evidence</a>
+<a href="https://www.theverge.com/2017/11/21/16680290/fcc-end-net-neutrality-vote-announced" target="_blank">https://www.theverge.com/2017/11/21/16680290/fcc-end-net-neutrality-vote-announced</a>
+<a href="https://www.reuters.com/article/us-usa-internet-exclusive/fcc-chief-plans-to-ditch-u-s-net-neutrality-rules-idUSKBN1DL21A" target="_blank">https://www.reuters.com/article/us-usa-internet-exclusive/fcc-chief-plans-to-ditch-u-s-net-neutrality-rules-idUSKBN1DL21A</a>
+<a href="https://www.recode.net/2017/11/28/16711256/fcc-ajit-pai-net-neutrality-cher-twitter" target="_blank">https://www.recode.net/2017/11/28/16711256/fcc-ajit-pai-net-neutrality-cher-twitter</a>
+<a href="https://www.cnet.com/news/why-india-doesnt-want-free-basics/" target="_blank">https://www.cnet.com/news/why-india-doesnt-want-free-basics/</a>
 <a href="https://www.bleepingcomputer.com/news/security/broadband-providers-win-big-with-the-proposed-repeal-of-net-neutrality/" target="_blank">https://www.bleepingcomputer.com/news/security/broadband-providers-win-big-with-the-proposed-repeal-of-net-neutrality/</a>
-<a href="http://www.tomshardware.com/news/intel-me-security-vulnerabilities-patches,35971.html" target="_blank">http://www.tomshardware.com/news/intel-me-security-vulnerabilities-patches,35971.html</a>
-<a href="https://arstechnica.com/information-technology/2017/11/intel-warns-of-widespread-vulnerability-in-pc-server-device-firmware/" target="_blank">https://arstechnica.com/information-technology/2017/11/intel-warns-of-widespread-vulnerability-in-pc-server-device-firmware/</a>
-<a href="https://www.bleepingcomputer.com/news/security/intel-fixes-critical-bugs-in-management-engine-its-secret-cpu-on-chip/" target="_blank">https://www.bleepingcomputer.com/news/security/intel-fixes-critical-bugs-in-management-engine-its-secret-cpu-on-chip/</a>
-<a href="https://www.youtube.com/watch?v=csK3KspB-6A&list=WL&index=20" target="_blank">https://www.youtube.com/watch?v=csK3KspB-6A&list=WL&index=20</a>
-<a href="http://www.tomshardware.com/news/fcc-proposal-end-net-neutrality,35983.html" target="_blank">http://www.tomshardware.com/news/fcc-proposal-end-net-neutrality,35983.html</a>
-<a href="http://www.tomshardware.com/news/fcc-dismantling-net-neutrality-rules,35976.html" target="_blank">http://www.tomshardware.com/news/fcc-dismantling-net-neutrality-rules,35976.html</a>
+<a href="https://www.battleforthenet.com/" target="_blank">https://www.battleforthenet.com/</a>
+<a href="https://thenextweb.com/twitter/2017/11/29/fcc-chairman-derides-twitter-bias-avoiding-net-neutrality-issue/" target="_blank">https://thenextweb.com/twitter/2017/11/29/fcc-chairman-derides-twitter-bias-avoiding-net-neutrality-issue/</a>
+<a href="https://petitions.whitehouse.gov/petition/do-not-repeal-net-neutrality" target="_blank">https://petitions.whitehouse.gov/petition/do-not-repeal-net-neutrality</a>
+<a href="https://blog.streamingmedia.com/2014/06/netflix-isp-newdata.html" target="_blank">https://blog.streamingmedia.com/2014/06/netflix-isp-newdata.html</a>
+<a href="https://arstechnica.com/tech-policy/2017/12/net-neutrality-activists-just-took-over-reddit-with-protest-posts/" target="_blank">https://arstechnica.com/tech-policy/2017/12/net-neutrality-activists-just-took-over-reddit-with-protest-posts/</a>
+<a href="https://arstechnica.com/tech-policy/2017/12/comcast-to-customers-just-trustus-about-changed-net-neutrality-pledges/" target="_blank">https://arstechnica.com/tech-policy/2017/12/comcast-to-customers-just-trustus-about-changed-net-neutrality-pledges/</a>
+<a href="https://arstechnica.com/tech-policy/2017/12/att-says-it-never-blocked-apps-fails-to-mention-how-it-blocked-facetime/" target="_blank">https://arstechnica.com/tech-policy/2017/12/att-says-it-never-blocked-apps-fails-to-mention-how-it-blocked-facetime/</a>
 <a href="https://arstechnica.com/tech-policy/2017/11/why-the-fcc-ignored-public-opinion-in-its-push-to-kill-net-neutrality/" target="_blank">https://arstechnica.com/tech-policy/2017/11/why-the-fcc-ignored-public-opinion-in-its-push-to-kill-net-neutrality/</a>
+<a href="https://arstechnica.com/tech-policy/2017/11/rip-net-neutrality-fcc-chair-releases-plan-to-deregulate-isps/" target="_blank">https://arstechnica.com/tech-policy/2017/11/rip-net-neutrality-fcc-chair-releases-plan-to-deregulate-isps/</a>
 <a href="https://arstechnica.com/tech-policy/2017/11/net-neutrality-supporters-plan-nationwide-protests-on-december-7/" target="_blank">https://arstechnica.com/tech-policy/2017/11/net-neutrality-supporters-plan-nationwide-protests-on-december-7/</a>
 <a href="https://arstechnica.com/tech-policy/2017/11/fcc-stonewalled-investigation-of-net-neutrality-comment-fraud-ny-ag-says/" target="_blank">https://arstechnica.com/tech-policy/2017/11/fcc-stonewalled-investigation-of-net-neutrality-comment-fraud-ny-ag-says/</a>
-<a href="https://www.theverge.com/2017/11/22/16690870/fcc-repeal-net-neutrality-proposal-released" target="_blank">https://www.theverge.com/2017/11/22/16690870/fcc-repeal-net-neutrality-proposal-released</a>
-<a href="https://www.theverge.com/2017/11/22/16691506/portugal-meo-internet-packages-net-neutrality-ajit-pai-plan" target="_blank">https://www.theverge.com/2017/11/22/16691506/portugal-meo-internet-packages-net-neutrality-ajit-pai-plan</a>
-<a href="https://www.theverge.com/2017/11/22/16691794/net-neutrality-fcc-ajit-pai-comcast-block-bittorrent" target="_blank">https://www.theverge.com/2017/11/22/16691794/net-neutrality-fcc-ajit-pai-comcast-block-bittorrent</a>
-<a href="https://www.theverge.com/2017/11/22/16691324/verizon-store-net-neutrality-protests" target="_blank">https://www.theverge.com/2017/11/22/16691324/verizon-store-net-neutrality-protests</a>
-<a href="https://www.theverge.com/2017/11/22/16689838/fcc-net-neutrality-comments-were-largely-ignored" target="_blank">https://www.theverge.com/2017/11/22/16689838/fcc-net-neutrality-comments-were-largely-ignored</a>
-<a href="https://www.theverge.com/2017/11/22/16691344/fcc-preempt-block-state-local-net-neutrality-laws" target="_blank">https://www.theverge.com/2017/11/22/16691344/fcc-preempt-block-state-local-net-neutrality-laws</a>
-<a href="http://www.tomshardware.com/news/fcc-proposal-end-net-neutrality,35983.html" target="_blank">http://www.tomshardware.com/news/fcc-proposal-end-net-neutrality,35983.html</a>
-<a href="https://www.theverge.com/2017/11/23/16693840/net-neutrality-us-fcc-global-effect" target="_blank">https://www.theverge.com/2017/11/23/16693840/net-neutrality-us-fcc-global-effect</a>
-<a href="https://www.theverge.com/2017/11/23/16694128/net-neutrality-protests-fcc-ajit-pai-internet" target="_blank">https://www.theverge.com/2017/11/23/16694128/net-neutrality-protests-fcc-ajit-pai-internet</a>
-<a href="https://arstechnica.com/tech-policy/2017/11/uber-hit-with-2-lawsuits-over-gigantic-2016-data-breach/" target="_blank">https://arstechnica.com/tech-policy/2017/11/uber-hit-with-2-lawsuits-over-gigantic-2016-data-breach/</a>
-<a href="https://arstechnica.com/tech-policy/2017/11/judge-dismisses-lawsuits-filed-back-in-2013-over-nsa-bulk-surveillance/" target="_blank">https://arstechnica.com/tech-policy/2017/11/judge-dismisses-lawsuits-filed-back-in-2013-over-nsa-bulk-surveillance/</a>
-<a href="https://www.bleepingcomputer.com/news/hardware/acer-dell-fujitsu-hp-lenovo-panasonic-impacted-by-intel-me-security-bugs/" target="_blank">https://www.bleepingcomputer.com/news/hardware/acer-dell-fujitsu-hp-lenovo-panasonic-impacted-by-intel-me-security-bugs/</a>
-<a href="https://krebsonsecurity.com/2017/11/namedobssnfafsa-data-gold-mine/" target="_blank">https://krebsonsecurity.com/2017/11/namedobssnfafsa-data-gold-mine/</a>
-<a href="https://arstechnica.com/tech-policy/2017/11/att-and-comcast-win-lawsuit-they-filed-to-stall-google-fiber-in-nashville/" target="_blank">https://arstechnica.com/tech-policy/2017/11/att-and-comcast-win-lawsuit-they-filed-to-stall-google-fiber-in-nashville/</a>
-<a href="https://arstechnica.com/tech-policy/2017/11/as-doj-calls-for-responsible-encryption-expert-asks-responsible-to-whom/" target="_blank">https://arstechnica.com/tech-policy/2017/11/as-doj-calls-for-responsible-encryption-expert-asks-responsible-to-whom/</a>
-<a href="https://arstechnica.com/tech-policy/2017/11/how-four-microsoft-engineers-proved-copy-protection-would-fail/" target="_blank">https://arstechnica.com/tech-policy/2017/11/how-four-microsoft-engineers-proved-copy-protection-would-fail/</a>
-<a href="https://www.bleepingcomputer.com/news/security/mystery-surrounds-recent-cryptocurrency-wallet-hack/" target="_blank">https://www.bleepingcomputer.com/news/security/mystery-surrounds-recent-cryptocurrency-wallet-hack/</a>
-<a href="https://9to5mac.com/2017/11/19/unlock-texas-shooter-iphone-se/" target="_blank">https://9to5mac.com/2017/11/19/unlock-texas-shooter-iphone-se/</a>
-<a href="https://www.bloomberg.com/news/articles/2017-11-21/uber-concealed-cyberattack-that-exposed-57-million-people-s-data" target="_blank">https://www.bloomberg.com/news/articles/2017-11-21/uber-concealed-cyberattack-that-exposed-57-million-people-s-data</a>
-<a href="https://www.uber.com/newsroom/2016-data-incident/" target="_blank">https://www.uber.com/newsroom/2016-data-incident/</a>
-<a href="https://arstechnica.com/tech-policy/2017/11/extreme-digital-vetting-of-visitors-to-the-us-moves-forward-under-a-new-name/" target="_blank">https://arstechnica.com/tech-policy/2017/11/extreme-digital-vetting-of-visitors-to-the-us-moves-forward-under-a-new-name/</a>
-<a href="http://www.zdnet.com/article/australia-fair-game-when-it-comes-to-the-threat-of-a-cyber-attack/" target="_blank">http://www.zdnet.com/article/australia-fair-game-when-it-comes-to-the-threat-of-a-cyber-attack/</a>
-<a href="http://www.zdnet.com/article/linus-linux-torvalds-gives-security-developers-guidance/" target="_blank">http://www.zdnet.com/article/linus-linux-torvalds-gives-security-developers-guidance/</a>
-<a href="http://www.zdnet.com/article/australians-will-own-their-banking-and-internet-data-under-new-legislation/" target="_blank">http://www.zdnet.com/article/australians-will-own-their-banking-and-internet-data-under-new-legislation/</a>
-<a href="https://www.bleepingcomputer.com/news/security/golden-saml-attack-lets-attackers-forge-authentication-to-cloud-apps/" target="_blank">https://www.bleepingcomputer.com/news/security/golden-saml-attack-lets-attackers-forge-authentication-to-cloud-apps/</a>
-<a href="https://www.bleepingcomputer.com/news/security/imgur-suffered-a-small-data-breach-in-2014/" target="_blank">https://www.bleepingcomputer.com/news/security/imgur-suffered-a-small-data-breach-in-2014/</a>
-<a href="http://pocketnow.com/2017/11/22/google-collected-location-information-unaware-android-users" target="_blank">http://pocketnow.com/2017/11/22/google-collected-location-information-unaware-android-users</a>
-<a href="http://www.tomshardware.com/news/ethereum-roadmap-next-generation-sharding,35999.html" target="_blank">http://www.tomshardware.com/news/ethereum-roadmap-next-generation-sharding,35999.html</a>
-<a href="https://arstechnica.com/tech-policy/2017/11/security-firm-was-front-for-advanced-chinese-hacking-operation-feds-say/" target="_blank">https://arstechnica.com/tech-policy/2017/11/security-firm-was-front-for-advanced-chinese-hacking-operation-feds-say/</a>
-<a href="http://www.zdnet.com/article/ombudsman-finds-australian-federal-police-unaware-of-journalist-metadata-requirements/" target="_blank">http://www.zdnet.com/article/ombudsman-finds-australian-federal-police-unaware-of-journalist-metadata-requirements/</a>
-<a href="http://www.zdnet.com/article/trump-considering-banning-white-house-staffers-personal-phones/" target="_blank">http://www.zdnet.com/article/trump-considering-banning-white-house-staffers-personal-phones/</a>
-<a href="https://www.theverge.com/2017/11/27/16706102/white-house-personal-phone-ban-trump" target="_blank">https://www.theverge.com/2017/11/27/16706102/white-house-personal-phone-ban-trump</a>
-<a href="https://www.bleepingcomputer.com/news/security/us-charges-three-members-of-elite-chinese-cyber-espionage-unit/" target="_blank">https://www.bleepingcomputer.com/news/security/us-charges-three-members-of-elite-chinese-cyber-espionage-unit/</a>
-<a href="https://krebsonsecurity.com/2017/11/who-was-the-nsa-contractor-arrested-for-leaking-the-shadow-brokers-hacking-tools/" target="_blank">https://krebsonsecurity.com/2017/11/who-was-the-nsa-contractor-arrested-for-leaking-the-shadow-brokers-hacking-tools/</a>
-<a href="https://www.schneier.com/blog/archives/2017/11/uber_data_hack.html" target="_blank">https://www.schneier.com/blog/archives/2017/11/uber_data_hack.html</a>
-<a href="https://arstechnica.com/information-technology/2017/11/expensify-acknowledges-potential-privacy-problem-by-calling-it-a-feature/" target="_blank">https://arstechnica.com/information-technology/2017/11/expensify-acknowledges-potential-privacy-problem-by-calling-it-a-feature/</a>
+<a href="https://arstechnica.com/tech-policy/2017/11/fcc-will-also-order-states-to-scrap-plans-for-their-own-net-neutrality-laws/" target="_blank">https://arstechnica.com/tech-policy/2017/11/fcc-will-also-order-states-to-scrap-plans-for-their-own-net-neutrality-laws/</a>
+<a href="http://time.com/5033521/fcc-ajit-pai-net-neutrality-repeal/" target="_blank">http://time.com/5033521/fcc-ajit-pai-net-neutrality-repeal/</a>
+<a href="https://arstechnica.com/tech-policy/2017/11/charter-is-using-net-neutrality-repeal-to-fight-lawsuit-over-slow-speeds/" target="_blank">https://arstechnica.com/tech-policy/2017/11/charter-is-using-net-neutrality-repeal-to-fight-lawsuit-over-slow-speeds/</a>
+<a href="https://arstechnica.com/tech-policy/2017/11/comcast-deleted-net-neutrality-pledge-the-same-day-fcc-announced-repeal/" target="_blank">https://arstechnica.com/tech-policy/2017/11/comcast-deleted-net-neutrality-pledge-the-same-day-fcc-announced-repeal/</a>
 <a href="https://arstechnica.com/tech-policy/2017/11/comcast-quietly-drops-promise-not-to-charge-tolls-for-internet-fast-lanes/" target="_blank">https://arstechnica.com/tech-policy/2017/11/comcast-quietly-drops-promise-not-to-charge-tolls-for-internet-fast-lanes/</a>
-<a href="https://arstechnica.com/science/2017/11/nasas-next-flagship-telescope-is-not-executable-in-its-current-form/" target="_blank">https://arstechnica.com/science/2017/11/nasas-next-flagship-telescope-is-not-executable-in-its-current-form/</a>
-<a href="http://www.zdnet.com/article/after-wannacry-ransomware-attack-the-nhs-is-toughening-its-cyber-defences/" target="_blank">http://www.zdnet.com/article/after-wannacry-ransomware-attack-the-nhs-is-toughening-its-cyber-defences/</a>
-<a href="http://www.zdnet.com/article/australians-will-trade-privacy-for-security-if-you-frame-it-right/" target="_blank">http://www.zdnet.com/article/australians-will-trade-privacy-for-security-if-you-frame-it-right/</a>
-<a href="https://www.theverge.com/2017/11/27/16687956/mark-jacobson-stanford-critique-lawsuit-retraction" target="_blank">https://www.theverge.com/2017/11/27/16687956/mark-jacobson-stanford-critique-lawsuit-retraction</a>
-<a href="https://www.theverge.com/2017/11/27/16705170/net-neutrality-cyber-monday-fcc-letter" target="_blank">https://www.theverge.com/2017/11/27/16705170/net-neutrality-cyber-monday-fcc-letter</a>
-<a href="https://www.theverge.com/2017/11/27/16703904/laptop-learning-lecture" target="_blank">https://www.theverge.com/2017/11/27/16703904/laptop-learning-lecture</a>
+<a href="https://arstechnica.com/tech-policy/2017/11/comcast-throttling-bittorrent-was-no-big-deal-fcc-says/" target="_blank">https://arstechnica.com/tech-policy/2017/11/comcast-throttling-bittorrent-was-no-big-deal-fcc-says/</a>
+<a href="https://arstechnica.com/tech-policy/2017/11/ajit-pai-blames-cher-and-hulk-actor-for-ginning-up-net-neutrality-support/" target="_blank">https://arstechnica.com/tech-policy/2017/11/ajit-pai-blames-cher-and-hulk-actor-for-ginning-up-net-neutrality-support/</a>
+<a href="http://www.tomshardware.com/news/fcc-dismantling-net-neutrality-rules,35976.html" target="_blank">http://www.tomshardware.com/news/fcc-dismantling-net-neutrality-rules,35976.html</a>
+<a href="http://www.tomshardware.com/news/fcc-myths-facts-net-neutrality,36016.html" target="_blank">http://www.tomshardware.com/news/fcc-myths-facts-net-neutrality,36016.html</a>
+<a href="http://www.zdnet.com/article/welcome-back-sneaker-net-why-neutrality-repeal-will-drive-us-to-the-edge/" target="_blank">http://www.zdnet.com/article/welcome-back-sneaker-net-why-neutrality-repeal-will-drive-us-to-the-edge/</a>
+<a href="http://www.tomshardware.com/news/fcc-proposal-end-net-neutrality,35983.html" target="_blank">http://www.tomshardware.com/news/fcc-proposal-end-net-neutrality,35983.html</a>
+<a href="http://www.tomshardware.com/news/how-to-fight-fcc-net-neutrality,36017.html" target="_blank">http://www.tomshardware.com/news/how-to-fight-fcc-net-neutrality,36017.html</a>
+<a href="http://www.tomshardware.com/news/devin-nunes-expands-surveillance-powers,36034.html" target="_blank">http://www.tomshardware.com/news/devin-nunes-expands-surveillance-powers,36034.html</a>
+<a href="http://www.zdnet.com/article/cia-to-continue-cloud-push-in-the-name-of-national-security/" target="_blank">http://www.zdnet.com/article/cia-to-continue-cloud-push-in-the-name-of-national-security/</a>
+<a href="http://www.zdnet.com/article/google-urges-fair-and-responsible-ai-development/" target="_blank">http://www.zdnet.com/article/google-urges-fair-and-responsible-ai-development/</a>
+<a href="http://www.zdnet.com/article/hacking-back-is-a-terrible-idea-but-some-companies-are-still-keen-to-try-it/" target="_blank">http://www.zdnet.com/article/hacking-back-is-a-terrible-idea-but-some-companies-are-still-keen-to-try-it/</a>
+<a href="http://www.zdnet.com/article/internet-censorship-its-on-the-rise-and-silicon-valley-is-helping-it-happen/" target="_blank">http://www.zdnet.com/article/internet-censorship-its-on-the-rise-and-silicon-valley-is-helping-it-happen/</a>
+<a href="http://www.zdnet.com/article/nsa-leak-inscom-exposes-red-disk-intelligence-system/" target="_blank">http://www.zdnet.com/article/nsa-leak-inscom-exposes-red-disk-intelligence-system/</a>
+<a href="https://www.schneier.com/blog/archives/2017/11/nsa_red_disk_da.html" target="_blank">https://www.schneier.com/blog/archives/2017/11/nsa_red_disk_da.html</a>
+<a href="https://arstechnica.com/information-technology/2017/11/army-red-disk-intel-sharing-system-left-exposed-in-open-aws-data-store/" target="_blank">https://arstechnica.com/information-technology/2017/11/army-red-disk-intel-sharing-system-left-exposed-in-open-aws-data-store/</a>
+<a href="http://www.zdnet.com/article/ragtime-program-appear-in-nsa-leaked-files/" target="_blank">http://www.zdnet.com/article/ragtime-program-appear-in-nsa-leaked-files/</a>
+<a href="https://9to5mac.com/2017/11/19/unlock-texas-shooter-iphone-se/" target="_blank">https://9to5mac.com/2017/11/19/unlock-texas-shooter-iphone-se/</a>
+<a href="https://arstechnica.com/tech-policy/2017/11/as-doj-calls-for-responsible-encryption-expert-asks-responsible-to-whom/" target="_blank">https://arstechnica.com/tech-policy/2017/11/as-doj-calls-for-responsible-encryption-expert-asks-responsible-to-whom/</a>
+<a href="https://arstechnica.com/tech-policy/2017/11/extreme-digital-vetting-of-visitors-to-the-us-moves-forward-under-a-new-name/" target="_blank">https://arstechnica.com/tech-policy/2017/11/extreme-digital-vetting-of-visitors-to-the-us-moves-forward-under-a-new-name/</a>
+<a href="https://arstechnica.com/tech-policy/2017/11/how-four-microsoft-engineers-proved-copy-protection-would-fail/" target="_blank">https://arstechnica.com/tech-policy/2017/11/how-four-microsoft-engineers-proved-copy-protection-would-fail/</a>
+<a href="https://arstechnica.com/tech-policy/2017/11/how-bitcoins-became-worth-10000/" target="_blank">https://arstechnica.com/tech-policy/2017/11/how-bitcoins-became-worth-10000/</a>
+<a href="https://www.cnbc.com/2017/11/21/jpmorgan-reportedly-getting-into-bitcoin-futures-trading.html" target="_blank">https://www.cnbc.com/2017/11/21/jpmorgan-reportedly-getting-into-bitcoin-futures-trading.html</a>
+<a href="https://www.theverge.com/2017/11/29/16715296/nasdaq-bitcoin-futures-long-short" target="_blank">https://www.theverge.com/2017/11/29/16715296/nasdaq-bitcoin-futures-long-short</a>
+<a href="https://www.theverge.com/2017/11/29/16714322/bitcoin-surge-10000" target="_blank">https://www.theverge.com/2017/11/29/16714322/bitcoin-surge-10000</a>
+<a href="https://www.theverge.com/2017/11/29/16711304/bitcoin-price-10000-cryptocurrency-regulation-finance" target="_blank">https://www.theverge.com/2017/11/29/16711304/bitcoin-price-10000-cryptocurrency-regulation-finance</a>
+<a href="https://arstechnica.com/tech-policy/2017/11/judge-dismisses-lawsuits-filed-back-in-2013-over-nsa-bulk-surveillance/" target="_blank">https://arstechnica.com/tech-policy/2017/11/judge-dismisses-lawsuits-filed-back-in-2013-over-nsa-bulk-surveillance/</a>
+<a href="https://arstechnica.com/tech-policy/2017/11/justices-hear-case-that-could-reshape-location-privacy-in-the-cellular-age/" target="_blank">https://arstechnica.com/tech-policy/2017/11/justices-hear-case-that-could-reshape-location-privacy-in-the-cellular-age/</a>
+<a href="https://krebsonsecurity.com/2017/11/namedobssnfafsa-data-gold-mine/" target="_blank">https://krebsonsecurity.com/2017/11/namedobssnfafsa-data-gold-mine/</a>
+<a href="https://mjg59.dreamwidth.org/49611.html" target="_blank">https://mjg59.dreamwidth.org/49611.html</a>
+<a href="https://motherboard.vice.com/en_us/article/59yexk/princeton-study-session-replay-scripts-tracking-you" target="_blank">https://motherboard.vice.com/en_us/article/59yexk/princeton-study-session-replay-scripts-tracking-you</a>
+<a href="https://www.bleepingcomputer.com/news/technology/popular-websites-are-recording-your-every-move/" target="_blank">https://www.bleepingcomputer.com/news/technology/popular-websites-are-recording-your-every-move/</a>
 <a href="https://thehackernews.com/2017/11/website-keylogging.html" target="_blank">https://thehackernews.com/2017/11/website-keylogging.html</a>
-<a href="https://ha.cking.ch/s8_data_line_locator/" target="_blank">https://ha.cking.ch/s8_data_line_locator/</a>
-<a href="https://blog.streamingmedia.com/2014/06/netflix-isp-newdata.html" target="_blank">https://blog.streamingmedia.com/2014/06/netflix-isp-newdata.html</a>
+<a href="https://www.theverge.com/2017/11/21/16684818/google-location-tracking-cell-tower-data-android-os-firebase-privacy" target="_blank">https://www.theverge.com/2017/11/21/16684818/google-location-tracking-cell-tower-data-android-os-firebase-privacy</a>
+<a href="https://qz.com/1131515/google-collects-android-users-locations-even-when-location-services-are-disabled/" target="_blank">https://qz.com/1131515/google-collects-android-users-locations-even-when-location-services-are-disabled/</a>
+<a href="http://pocketnow.com/2017/11/22/google-collected-location-information-unaware-android-users" target="_blank">http://pocketnow.com/2017/11/22/google-collected-location-information-unaware-android-users</a>
+<a href="https://www.bleepingcomputer.com/news/security/new-but-old-us-bill-introduces-prison-time-for-execs-who-conceal-data-breaches/" target="_blank">https://www.bleepingcomputer.com/news/security/new-but-old-us-bill-introduces-prison-time-for-execs-who-conceal-data-breaches/</a>
+<a href="https://www.bleepingcomputer.com/news/security/no-patch-available-for-rce-bug-affecting-half-of-the-internets-email-servers/" target="_blank">https://www.bleepingcomputer.com/news/security/no-patch-available-for-rce-bug-affecting-half-of-the-internets-email-servers/</a>
+<a href="https://www.bleepingcomputer.com/news/security/top-secret-us-army-and-nsa-files-left-exposed-online-on-amazon-s3-server/" target="_blank">https://www.bleepingcomputer.com/news/security/top-secret-us-army-and-nsa-files-left-exposed-online-on-amazon-s3-server/</a>
+<a href="https://www.schneier.com/blog/archives/2017/11/warrant_protect.html" target="_blank">https://www.schneier.com/blog/archives/2017/11/warrant_protect.html</a>
+<a href="https://www.theguardian.com/technology/2017/nov/24/data-breach-hits-department-of-social-services-credit-card-system" target="_blank">https://www.theguardian.com/technology/2017/nov/24/data-breach-hits-department-of-social-services-credit-card-system</a>
+<a href="https://www.theverge.com/2017/11/29/16715562/supreme-court-privacy-laws-carpenter-v-united-states" target="_blank">https://www.theverge.com/2017/11/29/16715562/supreme-court-privacy-laws-carpenter-v-united-states</a>
+<a href="https://www.theverge.com/2017/11/30/16719012/google-uk-class-action-iphone-safari-cookies" target="_blank">https://www.theverge.com/2017/11/30/16719012/google-uk-class-action-iphone-safari-cookies</a>
+<a href="https://www.theverge.com/2017/12/1/16723238/ai-artificial-intelligence-progress-index" target="_blank">https://www.theverge.com/2017/12/1/16723238/ai-artificial-intelligence-progress-index</a>
+<a href="https://www.theverge.com/2017/12/1/16725246/trump-retweet-britain-first-retraction" target="_blank">https://www.theverge.com/2017/12/1/16725246/trump-retweet-britain-first-retraction</a>
+<a href="https://www.troyhunt.com/im-testifying-in-front-of-congress-in-washington-dc-about-data-breaches-what-should-i-say/" target="_blank">https://www.troyhunt.com/im-testifying-in-front-of-congress-in-washington-dc-about-data-breaches-what-should-i-say/</a>
+<a href="http://www.tomshardware.com/news/irs-access-14355-coinbase-customers,36020.html" target="_blank">http://www.tomshardware.com/news/irs-access-14355-coinbase-customers,36020.html</a>
+<a href="https://www.theverge.com/2017/11/29/16717416/us-coinbase-irs-records" target="_blank">https://www.theverge.com/2017/11/29/16717416/us-coinbase-irs-records</a>
+<a href="https://www.bleepingcomputer.com/news/technology/judge-orders-coinbase-to-hand-over-details-of-14-355-us-users-to-the-irs/" target="_blank">https://www.bleepingcomputer.com/news/technology/judge-orders-coinbase-to-hand-over-details-of-14-355-us-users-to-the-irs/</a>
+<a href="http://www.zdnet.com/article/irs-demands-14000-coinbase-user-records-of-bitcoin-transactions/" target="_blank">http://www.zdnet.com/article/irs-demands-14000-coinbase-user-records-of-bitcoin-transactions/</a>
+<a href="https://www.bleepingcomputer.com/news/security/intel-fixes-critical-bugs-in-management-engine-its-secret-cpu-on-chip/" target="_blank">https://www.bleepingcomputer.com/news/security/intel-fixes-critical-bugs-in-management-engine-its-secret-cpu-on-chip/</a>
 </div>
 <b>11-11-2017</b><p>
 "It's time to stop trusting Google search already"
@@ -335,8 +345,8 @@ I understand that criminals will use encryption, but weakening encryption would 
 </p>
 </article>
 
-<footer>How to contact me securely:<br/>connor.bray.ricks@gmail.com | Wire: @delta_duhr | Signal: (720) 635-6109<br/>GPG Fingerprint (key in pgp.mit.edu): 7C8A 15DB 8510 8FA0 E8B6  8297 FAC5 8BDE 5DE5 F984</footer>
+<footer>How to contact me securely:<br/>connor.bray.ricks@gmail.com | Wire: @delta_duhr | Signal: (720) 635-6109<br/>GPG Fingerprint (key in pgp.mit.edu): 7C8A 15DB 8510 8FA0 E8B6  8297 FAC5 8BDE 5DE5 F984
+<iframe style="visibility: hidden" height="0" width="0" src="https://github.com/Delta-Duhr/tech-news"></iframe></footer>
 </div>
-
 </body>
 </html>
